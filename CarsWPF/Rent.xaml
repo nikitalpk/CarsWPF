@@ -1,0 +1,35 @@
+﻿<Window x:Class="CarsWPF.Rent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CarsWPF"
+        mc:Ignorable="d"
+        Title="Rent" Height="450" Width="800">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF62E0EA"/>
+            <GradientStop Color="#FF3642F5" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid Margin="400,282,0,0">
+        <DataGrid x:Name="dataGrid" Margin="-72,-175,17,34"/>
+        <Label Content="Машина" HorizontalAlignment="Left" Margin="-377,-137,0,0" VerticalAlignment="Top" Foreground="#FFFBFAFA"/>
+        <Label Content="Клієнт" HorizontalAlignment="Left" Margin="-377,-91,0,0" VerticalAlignment="Top" Foreground="#FFFBFAFA"/>
+        <Label Content="Дата початку" HorizontalAlignment="Left" Margin="-377,-47,0,0" VerticalAlignment="Top" Foreground="#FFFBFAFA"/>
+        <Label Content="Дата кінця" HorizontalAlignment="Left" Margin="-377,-1,0,0" VerticalAlignment="Top" Foreground="#FFFBFAFA"/>
+        <TextBox x:Name="CarTxt" HorizontalAlignment="Left" Margin="-292,-133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="ClientTxt" HorizontalAlignment="Left" Margin="-292,-87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="StartTxt" HorizontalAlignment="Left" Margin="-292,-43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="EndTxt" HorizontalAlignment="Left" Margin="-292,3,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Додати" HorizontalAlignment="Left" Margin="-204,-264,0,0" VerticalAlignment="Top" Height="61" Width="108" Click="Button_Click_1" Foreground="#FFF9F6F6" Background="#FF9061D8"/>
+        <Button Content="Видалити" HorizontalAlignment="Left" Margin="-64,-264,0,0" VerticalAlignment="Top" Height="61" Width="106" Click="Button_Click" Foreground="#FFF9F6F6" Background="#FF9061D8"/>
+        <Button Content="Оновити" HorizontalAlignment="Left" Margin="88,-264,0,0" VerticalAlignment="Top" Height="61" Width="108" Click="Button_Click_2" Foreground="#FFF9F6F6" Background="#FF9061D8"/>
+        <Label Content="ID" HorizontalAlignment="Left" Margin="-377,-179,0,0" VerticalAlignment="Top" Foreground="#FFFBFAFA"/>
+        <TextBox x:Name="SearchTxt" HorizontalAlignment="Left" Margin="-292,-175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Вартість" HorizontalAlignment="Left" Margin="-377,39,0,0" VerticalAlignment="Top" Foreground="#FFFBFAFA"/>
+        <TextBox x:Name="CostTxt" HorizontalAlignment="Left" Margin="-292,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+
+    </Grid>
+</Window>
